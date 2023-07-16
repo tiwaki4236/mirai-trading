@@ -4,10 +4,9 @@
 
 [UI/UX DEMO](https://www.figma.com/file/msC2CJPFIhyJ1knGeHCDko/Mirai-Trading-SUI-Move-Hackathon)
 
-
 #### Project Member:
-リサオジ３    https://twitter.com/loud_lot_org  AKINDO ID：101opi
-DesciProbono  https://twitter.com/DesciProBono  AKINDO ID：desciprobono
+[リサオジ３](https://twitter.com/loud_lot_org) AKINDO ID：[101opi](https://app.akindo.io/users/101opi)
+[DesciProbono](https://twitter.com/DesciProBono) AKINDO ID：[desciprobono](https://app.akindo.io/users/desciprobono)
 
 ### What it does
   The aim of our project is to utilize the advantages of Sui-Move, namely high throughput transactions and object-centric shared objects, to provide a Decentralized Exchange (DEX) for goods and digital assets. Our platform will incorporate auction and futures trading functionalities, creating a space where participants can trade a wide variety of goods and assets.
