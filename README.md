@@ -6,6 +6,7 @@
 
 #### Project Member:
 [リサオジ３](https://twitter.com/loud_lot_org) AKINDO ID：[101opi](https://app.akindo.io/users/101opi)
+
 [DesciProbono](https://twitter.com/DesciProBono) AKINDO ID：[desciprobono](https://app.akindo.io/users/desciprobono)
 
 ### What it does
