@@ -1,4 +1,4 @@
-# Mirai-Trading
+# Mirai Treasure
 
 <img src="image.png" width="20%"> 
 
