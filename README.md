@@ -2,7 +2,7 @@
 
 <img src="image.png" width="20%"> 
 
-[Click here! UI/UX DEMO](https://www.figma.com/file/msC2CJPFIhyJ1knGeHCDko/Mirai-Trading-SUI-Move-Hackathon)
+[Click here! UI/UX DEMO](https://www.figma.com/file/msC2CJPFIhyJ1knGeHCDko/Mirai-Treasure-AKINDO-SUI-Move-Hackathon)
 
 #### Project Member:
 [リサオジ３](https://twitter.com/loud_lot_org) AKINDO ID：[101opi](https://app.akindo.io/users/101opi)
