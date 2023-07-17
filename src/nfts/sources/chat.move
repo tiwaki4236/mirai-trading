@@ -1,13 +1,15 @@
+// Reference Codes: https://github.com/MystenLabs/sui/blob/main/sui_programmability/examples/nfts/sources/chat.move
+
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
 module nfts::chat {
-    import std::ascii::*;
-    import std::option::*;
-    import sui::object::*;
-    import sui::transfer::*;
-    import sui::tx_context::*;
-    import std::vector::*;
+    use std::ascii::{Self, String};
+    use std::option::{Self, Option, some};
+    use sui::object::{Self, UID};
+    use sui::transfer;
+    use sui::tx_context::{Self, TxContext};
+    use std::vector::length;
 
     /// Max text length.
     const MAX_TEXT_LENGTH: u64 = 512;

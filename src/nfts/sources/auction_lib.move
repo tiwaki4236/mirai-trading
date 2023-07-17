@@ -1,3 +1,5 @@
+// Refrence codes: : https://github.com/MystenLabs/sui/blob/main/sui_programmability/examples/nfts/sources/auction_lib.move
+
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -6,20 +8,20 @@
 /// one using single-owner objects only and the other using shared
 /// objects.
 module nfts::auction_lib {
-    import std::option::*;
+    use std::option::{Self, Option};
 
-    import sui::coin::*;
-    import sui::balance::*;
-    import sui::sui::*;
-    import sui::object::*;
-    import sui::transfer::*;
-    import sui::tx_context::*;
+    use sui::coin;
+    use sui::balance::{Self, Balance};
+    use sui::sui::SUI;
+    use sui::object::{Self, UID};
+    use sui::transfer;
+    use sui::tx_context::{Self,TxContext};
 
     friend nfts::auction;
     friend nfts::shared_auction;
 
     /// Stores information about an auction bid.
-    struct BidData {
+    struct BidData has store{
         /// Coin representing the current (highest) bid.
         funds: Balance<SUI>,
         /// Address of the highest bidder.
@@ -28,7 +30,7 @@ module nfts::auction_lib {
 
     /// Maintains the state of the auction owned by a trusted
     /// auctioneer.
-    struct Auction<T: Key + Store> {
+    struct Auction<T: Key + Store> has key {
         id: UID,
         /// Item to be sold. It only really needs to be wrapped in
         /// Option if Auction represents a shared object but we do it

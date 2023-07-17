@@ -1,3 +1,5 @@
+// Reference Codes: https://github.com/MystenLabs/sui/blob/main/sui_programmability/examples/nfts/sources/shared_auction.move
+
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -25,11 +27,11 @@
 ///   - otherwise the funds accumulated in the auction go to the owner
 ///   and the item goes to the bidder that won the auction
 module nfts::shared_auction {
-    import sui::coin::*;
-    import sui::sui::*;
-    import sui::tx_context::*;
+    use sui::coin::{Self, Coin};
+    use sui::sui::SUI;
+    use sui::tx_context::{Self, TxContext};
 
-    import nfts::auction_lib::*;
+    use nfts::auction_lib::{Self, Auction};
 
     // Error codes.
 
