@@ -1,6 +1,6 @@
 # Mirai-Trading
 
-![Mirai Trading]<img src="image.png" width="25%">
+<img src="image.png" width="25%">
 
 [UI/UX DEMO](https://www.figma.com/file/msC2CJPFIhyJ1knGeHCDko/Mirai-Trading-SUI-Move-Hackathon)
 
