@@ -11,7 +11,7 @@ module defi::futures_trading {
     use sui::Order::{get as get_order, update as update_order};
     use sui::Position::{get_by_trader_and_contract, update as update_position};
     use sui::DerivativeOrder::get as get_derivative_order;
-    use sui::Balance::from as balance_from};
+    use sui::balance::{Self, Balance}use;
     // Futures contract
     struct FutureContract {
         id: UID,
