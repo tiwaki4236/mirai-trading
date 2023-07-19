@@ -4,6 +4,14 @@
 // SPDX-License-Identifier: Apache-2.0
 
 module defi::futures_trading {
+    use sui::object::{Self, ID, UID, new as object_new};
+    use sui::transfer::transfer;
+    use sui::tx_context::{Self, TxContext};
+    use sui::FutureContract::{get as get_future_contract, update as update_future_contract};
+    use sui::Order::{get as get_order, update as update_order};
+    use sui::Position::{get_by_trader_and_contract, update as update_position};
+    use sui::DerivativeOrder::get as get_derivative_order;
+    use sui::Balance::from as balance_from;
     // Futures contract
     struct FutureContract {
         id: UID,
