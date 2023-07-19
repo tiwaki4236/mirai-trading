@@ -13,7 +13,7 @@ module defi::futures_trading {
     use sui::DerivativeOrder::get as get_derivative_order;
     use sui::balance::{Self, Balance}use;
     // Futures contract
-    struct FutureContract {
+    struct FutureContract has key {
         id: UID,
         asset_name: String,
         contract_size: u64,
@@ -25,7 +25,7 @@ module defi::futures_trading {
     }
 
     // Futures order
-    struct Order {
+    struct Order has key {
         id: UID,
         asset_name: String,
         quantity: u64,
@@ -36,7 +36,7 @@ module defi::futures_trading {
     }
 
     // Position
-    struct Position {
+    struct Position has key {
         id: UID,
         contract_id: UID,
         trader: address,
@@ -44,7 +44,7 @@ module defi::futures_trading {
     }
 
     // Derivative contract
-    struct DerivativeContract {
+    struct DerivativeContract has key {
         id: UID,
         underlying_contract_id: UID,
         multiplier: u64,
@@ -56,7 +56,7 @@ module defi::futures_trading {
     }
 
     // Derivative order
-    struct DerivativeOrder {
+    struct DerivativeOrder has key {
         id: UID,
         underlying_order_id: UID,
         quantity: u64,
@@ -67,7 +67,7 @@ module defi::futures_trading {
     }
 
     // Derivative position
-    struct DerivativePosition {
+    struct DerivativePosition has key {
         id: UID,
         derivative_contract_id: UID,
         trader: address,
